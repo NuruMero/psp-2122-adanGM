@@ -1,0 +1,2 @@
+./src/script8.sh: line 5: eccho: command not found
+./src/script8.sh: line 7: lsst: command not found

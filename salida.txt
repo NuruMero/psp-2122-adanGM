@@ -1,0 +1,10 @@
+total 28
+drwxrwxr-x  6 mero mero 4096 oct 17 23:21 .
+drwxrwxr-x  4 mero mero 4096 oct 13 11:58 ..
+-rw-rw-r--  1 mero mero    0 oct 17 23:21 error.txt
+drwxrwxr-x  8 mero mero 4096 oct 17 23:17 .git
+drwxrwxr-x  2 mero mero 4096 oct 17 23:21 .idea
+drwxrwxr-x  3 mero mero 4096 oct 13 19:52 out
+-rw-rw-r--  1 mero mero  423 oct 13 11:58 psp-2122-adanGM.iml
+-rw-rw-r--  1 mero mero    0 oct 17 23:21 salida.txt
+drwxrwxr-x 13 mero mero 4096 oct 17 23:13 src

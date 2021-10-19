@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#pedir el dato al usuario
+echo 'Introduzca un  valor para la variable'
+#leer el dato del teclado y guardarlo en la variable de usuario var1
+read var
+
+echo 'El valor introducido es'
+echo $var
