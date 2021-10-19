@@ -6,10 +6,10 @@ public class App1_5 {
 
     public static void main(String[] args) throws IOException{
 
-        //creamos objeto File al directorio donde esta Ejemplo2
+        //creamos objeto File al directorio donde esta un ejemplo que no existe
         File directorio = new File("./out/production/");
 
-        //El proceso a ejecutar es Ejemplo2
+        //El proceso a ejecutar es Ejemplo9
         ProcessBuilder pb = new ProcessBuilder("java", "Ejemplo9");
 
         //se establece el directorio donde se encuentra el ejecutable

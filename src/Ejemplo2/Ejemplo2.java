@@ -12,9 +12,8 @@ public class Ejemplo2 {
         //Mostramos carácter a carácter la salida generada por DIR
         try {
             InputStream is = p.getInputStream();
-            int c;
             BufferedReader bris = new BufferedReader(new InputStreamReader(is));
-            String liner = null;
+            String liner;
             while ((liner = bris.readLine()) != null) {
                 System.out.println(liner);
             }

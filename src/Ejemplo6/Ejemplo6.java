@@ -40,5 +40,4 @@ public class Ejemplo6 {
             e.printStackTrace();
         }
     }
-
 }
