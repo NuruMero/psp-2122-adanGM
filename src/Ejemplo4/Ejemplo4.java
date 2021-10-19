@@ -7,20 +7,29 @@ public class Ejemplo4 {
     public static void main(String[] args) throws IOException{
 
         //preguntar esta parte
-        Process p = new ProcessBuilder("bash","date","-s").start();
+        File directorio = new File("./src");
+        Process p = null;
 
-        //escritura --envia entrada a DATE
+        ProcessBuilder pb = new ProcessBuilder("bash","script_ejemplo4");
+        pb.directory(directorio);
+        p = pb.start();
+
+        //escritura --envia entrada
         OutputStream os = p.getOutputStream();
-        os.write("15-06-18".getBytes());
+        os.write("15-06-18\n".getBytes());
         os.flush(); //vacía el buffer de salida
 
         //lectura -- obtiene la salida de DATE
-        InputStream is = p.getInputStream();
-        int c;
-        while ((c = is.read()) != -1) {
-            System.out.print((char) c);
+        InputStream  is = p.getInputStream();
+
+        BufferedReader bris = new BufferedReader(new InputStreamReader(is));
+        String liner = null;
+        while ((liner = bris.readLine()) != null) {
+            System.out.println(liner);
         }
+
         is.close();
+        bris.close();
 
         //COMPROBACION DE ERROR - 0 bien - 1 mal
         int exitVal;
